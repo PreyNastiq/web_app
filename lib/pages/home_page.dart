@@ -59,29 +59,26 @@ class HomePage extends StatelessWidget {
 
                 const SizedBox(height: 20),
 
-                Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 40),
-                  child: Row(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: const [
-                          CollectionTile(),
-                          SizedBox(height: 20),
-                          BottomTiles(),
-                        ],
-                      ),
-
-                      const SizedBox(width: 20),
-
-                      const QuickActionsTile(),
-
-                      const SizedBox(width: 20),
-
-                      const AlertsTile(),
-                    ],
-                  ),
+                Row(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: const [
+                        CollectionTile(),
+                        SizedBox(height: 20),
+                        BottomTiles(),
+                      ],
+                    ),
+                
+                    const SizedBox(width: 20),
+                
+                    const QuickActionsTile(),
+                
+                    const SizedBox(width: 20),
+                
+                    const AlertsTile(),
+                  ],
                 ),
               ],
             ),
