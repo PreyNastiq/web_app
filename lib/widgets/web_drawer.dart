@@ -27,13 +27,17 @@ class WebDrawer extends StatelessWidget {
           children: [
             Align(
               alignment: Alignment.topCenter,
-              child: SvgPicture.asset('assets/vectors/QS_logo.svg'),
+              child: Image.asset(
+                'assets/images/QS_logo.png',
+                width: 48.26,
+                height: 52,
+              ),
             ),
 
             SizedBox(height: 30),
 
             //Home
-            Image.asset('assets/images/QS_logo.png'),
+            SvgPicture.asset('assets/vectors/home.svg', width: 25, height: 25),
 
             Text('Home', style: TextStyle(color: Colors.white, fontSize: 12)),
 
